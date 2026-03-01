@@ -8,7 +8,7 @@ export default function Tabs() {
     return (
         <section>
             <nav>
-            {/* COULD PROBABLY use map() */}
+            {/* asi bych mohl/měl použít fci map() */}
             <TabButton isSelected={selectedTab === TABS_DATA[0]} onClick={() => setSelectedTab(TABS_DATA[0])}><strong>About Me</strong></TabButton>
             <TabButton isSelected={selectedTab === TABS_DATA[1]} onClick={() => setSelectedTab(TABS_DATA[1])}><strong>Projects</strong></TabButton>
             <TabButton isSelected={selectedTab === TABS_DATA[2]} onClick={() => setSelectedTab(TABS_DATA[2])}><strong>Hobbies</strong></TabButton>
