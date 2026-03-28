@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Tabs from './Tabs'
 import githubImg from '../assets/img/githubicon.svg'
 import meImg from '../assets/img/me.avif'

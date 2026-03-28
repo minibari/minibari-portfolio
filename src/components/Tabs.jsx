@@ -1,21 +1,21 @@
 import { useState } from "react";
-import { TABS_DATA } from "../tabsData.js"
+import { tabsData } from "../tabsData.js"
 import TabButton from "./TabButton.jsx";
 
 export default function Tabs() {
-    const [selectedTab, setSelectedTab] = useState(TABS_DATA[0]);
+    const [selectedTab, setSelectedTab] = useState(tabsData[0]);
 
     return (
         <section>
             <nav>
-            {/* asi bych mohl/měl použít fci map() */}
-            <TabButton isSelected={selectedTab === TABS_DATA[0]} onClick={() => setSelectedTab(TABS_DATA[0])}><strong>About Me</strong></TabButton>
-            <TabButton isSelected={selectedTab === TABS_DATA[1]} onClick={() => setSelectedTab(TABS_DATA[1])}><strong>Projects</strong></TabButton>
-            <TabButton isSelected={selectedTab === TABS_DATA[2]} onClick={() => setSelectedTab(TABS_DATA[2])}><strong>Hobbies</strong></TabButton>
-            <TabButton isSelected={selectedTab === TABS_DATA[3]} onClick={() => setSelectedTab(TABS_DATA[3])}><strong>This site</strong></TabButton>
+            {/* asi bych mohl/měl použít fci map()... použiju u karet */}
+            <TabButton  isSelected={selectedTab.title === tabsData[0].title} onClick={() => setSelectedTab(tabsData[0])}><strong>{tabsData[0].title}</strong></TabButton>
+            <TabButton  isSelected={selectedTab.title === tabsData[1].title} onClick={() => setSelectedTab(tabsData[1])}><strong>{tabsData[1].title}</strong></TabButton>
+            <TabButton  isSelected={selectedTab.title === tabsData[2].title} onClick={() => setSelectedTab(tabsData[2])}><strong>{tabsData[2].title}</strong></TabButton>
+            <TabButton  isSelected={selectedTab.title === tabsData[3].title} onClick={() => setSelectedTab(tabsData[3])}><strong>{tabsData[3].title}</strong></TabButton>
             </nav>
             <div className="mt-5">
-            {selectedTab}
+            {selectedTab.description}
             </div>
         </section>
     );
