@@ -11,13 +11,13 @@ export const projectsData = [
   },
   {
     title: "Arsenal minimal API",
-    link: "no link",
+    link: "https://minibari.github.io/Arsenal/",
     description: "My backend in .NET consumes WEB API from football-data.org and provide it for a frontend in React",
     img: canonImg,
   },
   {
     title: "MVC app ",
-    link: "no link",
+    link: "https://minibari.github.io./minibari-portfolio",
     description: "with authentication and authorization + database, probably a model of bookstore",
     img: mvcImg,
   }
