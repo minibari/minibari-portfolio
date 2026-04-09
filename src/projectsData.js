@@ -18,7 +18,7 @@ export const projectsData = [
   {
     title: "MVC app ",
     link: "https://minibari.github.io./minibari-portfolio",
-    description: "with authentication and authorization + database, probably a model of bookstore",
+    description: "with authentication and authorization + DB, I already made 1 with DevExtreme scaffolding but I want to make my own from scratch, which I will use for fees management in a football club",
     img: mvcImg,
   }
 ];
