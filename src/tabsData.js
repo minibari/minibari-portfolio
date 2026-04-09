@@ -1,7 +1,7 @@
 export const tabsData = [
   {
     title: "About Me",
-    description: "Previously worked mainly in administration and purchase fields, I decided to take a break because it is not something I would like to do my whole life, therefore I had quit and started travelling. Went through a requalification and nowadays I try to build my own things because I think the best way to learn is by actually do something real.",
+    description: "Previously worked mainly in administration and purchase fields, I decided to take a break, therefore I had quit and started travelling. Went through a requalification and nowadays I try to build my own things because I think the best way to learn is by actually do something real.",
 
   },
   {
